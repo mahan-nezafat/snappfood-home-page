@@ -1,0 +1,509 @@
+@font-face {
+  font-family: iransans;
+  src: url("https://snappfood.ir/downloads/fonts/SnppWeb-Fonts/SnappWeb2.0-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: iransansbold;
+  src: url("https://snappfood.ir/pwa/assets/fonts/IRANSansMobile.ttf");
+}
+@font-face {
+  font-family: iransanslight;
+  src: url("https://snappfood.ir/downloads/fonts/SnppWeb-Fonts/SnappWeb2.0-Light.woff");
+}
+.family {
+  font-family: iransans;
+}
+.family-bold {
+  font-family: iransansbold;
+}
+.family-light {
+  font-family: iransanslight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.food-varities > div::-webkit-scrollbar {
+  width: 3px !important;
+  height: 13px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.food-varities > div::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 80px !important;
+}
+
+.food-varities > div::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: iransans;
+  font-size: 12px;
+  background-color: #ffffff;
+}
+
+.header {
+  background-color: #F9FAFB;
+  margin: 40px 30px 0 40px;
+  height: 600px;
+  position: relative;
+}
+
+.food-category {
+  margin-top: 150px;
+}
+
+.footer {
+  background-color: #F9FAFB;
+  padding: 0px 40px 0px 30px;
+  --bs-gutter-x: 0;
+}
+.footer > div {
+  padding: 50px 0;
+}
+
+@media (max-width: 980px) {
+  .header {
+    margin: 20px 15px 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin: 0;
+  }
+}
+.header-navbar {
+  margin: 0px 30px -20px 60px;
+  padding-top: 30px;
+}
+
+.register-login {
+  width: 260px;
+}
+
+.register span {
+  font-family: iransans;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.banner-header {
+  background-image: url(../assets/images/hero-image.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.custom-btn {
+  border: none;
+  padding: 11px 8px;
+  background-color: #FF00A6;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+}
+.custom-btn:hover {
+  background-color: #FF38AC;
+}
+.custom-btn:hover a {
+  color: #ffffff;
+}
+.custom-btn a {
+  font-family: iransans;
+}
+.custom-btn a span {
+  font-family: iransansbold;
+}
+
+.order-food {
+  position: absolute;
+  top: 45%;
+  right: 3%;
+  font-size: 14px;
+}
+
+.changing-food ul li span {
+  color: #FF00A6;
+}
+
+.search-address {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.search-address form {
+  width: 100%;
+  position: relative;
+}
+
+.search-address form input {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 15px 30px;
+  outline: none;
+}
+
+.search-address form input::placeholder {
+  font-weight: 100;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.search-address form i:nth-child(2) {
+  position: absolute;
+  right: 3%;
+  top: 30%;
+  color: #ABAFB2;
+}
+
+.search-address form i:nth-child(3) {
+  position: absolute;
+  left: 1%;
+  top: 8%;
+  background-color: #FF00A6;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+}
+.search-address form i:nth-child(3):hover {
+  background-color: #FF38AC;
+}
+
+.vertical-wrap {
+  height: 60px;
+  overflow: hidden; /* HIDE SCROLL BAR */
+  position: relative;
+}
+
+.vertical-move {
+  transform: translateY(170px);
+  transition: transform 0.5s cubic-bezier(0.64, 0.57, 0.67, 1.53) 0.3s;
+}
+
+.vertical-item {
+  height: 60px;
+  line-height: 29px;
+  text-align: center;
+  color: #FF00A6;
+}
+
+.food-varities {
+  position: absolute;
+  bottom: -12%;
+  width: 97%;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2.5rem);
+  border-radius: 18px;
+  padding: 25px 5px;
+}
+
+.food-item {
+  min-width: 100px;
+}
+.food-item span {
+  font-family: iransansbold;
+  opacity: 0.7;
+}
+
+.category {
+  margin: 0 20px 0 40px;
+  width: 97%;
+  --bs-gutter-x: 0;
+}
+
+.category-title {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.category-title span {
+  font-family: iransans;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.category-item {
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin: 10px 0px;
+}
+.category-item img {
+  padding: 5px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.category-item a {
+  display: flex;
+  position: absolute;
+  bottom: 0%;
+  right: 2%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: transform 0.4s ease-in-out;
+  padding: 3px 15px;
+}
+.category-item a:hover i {
+  transform: translateX(-4px);
+}
+.category-item a span {
+  font-family: iransansbold;
+  font-size: 1rem;
+}
+.category-item a i {
+  color: #FF00A6;
+  font-size: 14px;
+  transition: transform 0.4s ease-in-out;
+  margin-right: 8px;
+}
+
+.download-app {
+  margin: 100px auto;
+  height: 550px;
+  background-color: #EBEDF0;
+  width: 95%;
+  border-bottom-right-radius: 100px;
+}
+
+.app-description {
+  padding-right: 130px !important;
+  height: 85%;
+}
+.app-description h2 {
+  margin-top: 30px;
+  opacity: 0.9;
+}
+.app-description span {
+  font-family: iransanslight;
+  font-size: 14px;
+  line-height: 2.5;
+  padding-left: 58px;
+  font-weight: 400;
+}
+
+.app-description form {
+  position: relative;
+  font-size: 12px;
+  width: 55%;
+}
+
+.app-description .phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 4px;
+  width: 90%;
+}
+
+.app-description form input[type=text] {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+  width: 70%;
+  font-size: 12px;
+}
+
+.app-description form input[type=text]::placeholder {
+  opacity: 0.5;
+}
+
+.app-description form input[type=button] {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.app-description form label {
+  font-family: iransansbold;
+  font-weight: bold;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.download-image {
+  position: relative;
+  height: 100%;
+}
+.download-image img {
+  width: 85%;
+  position: absolute;
+  top: -23%;
+  left: 10%;
+}
+
+.vendor {
+  margin: 150px auto 50px auto;
+  height: 300px;
+  background-color: #F9FAFB;
+  width: 95%;
+  border-radius: 50px;
+}
+
+.vendor-signup {
+  height: 57%;
+  margin: auto 0;
+  padding-right: 30px;
+}
+.vendor-signup h1 {
+  opacity: 0.9;
+  font-size: 1.9rem;
+}
+.vendor-signup h5 {
+  font-family: iransanslight;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.vendor-signup button i {
+  font-size: 1.3rem;
+}
+
+.vendor-image {
+  height: 100%;
+  position: relative;
+  width: 40%;
+}
+.vendor-image img {
+  position: absolute;
+  top: -32%;
+  left: 10%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.cities {
+  padding-right: 0px;
+}
+
+.city-title {
+  margin: 40px 0;
+}
+.city-title h6 {
+  font-family: iransansbold;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+
+.city-names div p {
+  font-family: iransansbold;
+  font-size: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.logo div img {
+  width: 80px;
+}
+.logo h6 {
+  color: #FF00A6;
+  font-size: 1.1rem;
+}
+.logo span {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.socials {
+  padding-top: 30px;
+  margin-right: 30px;
+}
+.socials div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.socials div a i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.socials div a img {
+  color: rgba(0, 0, 0, 0.5);
+  width: 20px;
+}
+
+.footer-about div {
+  width: 30%;
+}
+.footer-about div a {
+  padding: 10px 0;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 980px) {
+  .order-food {
+    top: 20%;
+  }
+  .order-food h1 {
+    font-size: 20px;
+  }
+  .vertical-move div {
+    font-size: 20px !important;
+  }
+  .food-varities {
+    overflow-x: scroll !important;
+  }
+}
+@media (max-width: 500px) {
+  .app-description {
+    padding-right: 0 !important;
+  }
+  .download-app {
+    border-radius: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: iransans;
+    src: url('https://snappfood.ir/downloads/fonts/SnppWeb-Fonts/SnappWeb2.0-Bold.woff') format("woff");
+}
+
+@font-face {
+    font-family: iransansbold;
+    src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile.ttf');
+}
+
+@font-face {
+    font-family: iransanslight;
+    src: url('https://snappfood.ir/downloads/fonts/SnppWeb-Fonts/SnappWeb2.0-Light.woff');
+}
+
+.family{
+    font-family: iransans;
+    &-bold{
+        font-family: iransansbold;
+    }
+    &-light{
+        font-family: iransanslight;
+    }   
+}
+
+$color-pure-white:#ffffff;
+
+$color-white:#F9FAFB;
+
+$color-pink-primary:#FF00A6;
+
+$color-pink-secondary:#FF38AC;
+
+// $color-beige:#F3D4B7;
+
+$color-gray:#ABAFB2;
+
+$color-light-gray:#EBEDF0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-pure-white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+} 
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba($color: #000000, $alpha: 0.3); 
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba($color: #000000, $alpha: 0.4); 
+}
+
+
+.food-varities>div::-webkit-scrollbar {
+    width: 3px !important;
+    height: 13px;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+} 
+
+.food-varities>div::-webkit-scrollbar-thumb {
+    background-color: rgba($color: #000000, $alpha: 0.3); 
+    border-radius: 80px !important;
+}
+
+.food-varities>div::-webkit-scrollbar-thumb:hover{
+    background-color: rgba($color: #000000, $alpha: 0.4); 
+}

@@ -1,0 +1,41 @@
+body{
+    font-family: iransans;
+    font-size: 12px;
+    background-color: $color-pure-white;
+}
+
+.header{
+    background-color: $color-white;
+    margin: 40px 30px 0 40px;
+    height: 600px;
+    position: relative;
+}
+
+
+
+.food-category{
+    margin-top: 150px;
+}
+
+.footer{
+    background-color: $color-white;
+    padding: 0px 40px 0px 30px;
+    --bs-gutter-x: 0;
+    >div{
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:980px){
+    .header{
+        margin: 20px 15px 0 20px;
+
+    }
+}
+
+@media(max-width:600px){
+    .header{
+    margin: 0;
+
+    }
+}
